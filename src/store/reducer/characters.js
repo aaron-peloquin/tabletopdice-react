@@ -1,5 +1,5 @@
-import load from './../dispatch/localStorageLoad'
-import save from './../dispatch/localStorageSave'
+import load from './../../helpers/localStorageLoad'
+import save from './../../helpers/localStorageSave'
 /**
  * Reducer for the redux key of "characters".
  * Will automatically save to localStorage on every update
@@ -30,10 +30,10 @@ const defaultState = []
  */
 const charactersReducer = (state=defaultState, { type, payload }) => {
   let saveToStorage = true
-  const storageSets = load('sets')
+  const charactersStorage = load('characters')
 
-  if(storageSets.length>0) {
-    state = storageSets
+  if(charactersStorage.length>0) {
+    state = charactersStorage
   }
 
   switch (type) {
