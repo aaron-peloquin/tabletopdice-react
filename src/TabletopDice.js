@@ -5,7 +5,6 @@ import Drawer from './element/HtmlDrawer'
 import MuiThemeProvider from '@material-ui/core/styles/MuiThemeProvider'
 import theme from './theme'
 
-
 /**
  * Default wrapping component for the whole app
  */
