@@ -3,8 +3,8 @@ import React from 'react';
 /**
  * Returns components for the left side nav
  */
-const htmlDrawer = () => {
-  return <aside></aside>
+const HtmlDrawer = () => {
+  return <aside>drawer</aside>
 }
 
-export default htmlDrawer
+export default HtmlDrawer
