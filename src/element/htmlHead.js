@@ -15,7 +15,7 @@ const HtmlHead = () => {
       <IconButton onClick={drawerOpen}>
         <MenuIcon aria-label="Menu"></MenuIcon>
       </IconButton>
-      <Typography variant="headline">Tabletop Dice</Typography>
+      <Typography variant="h6">Tabletop Dice</Typography>
     </Toolbar>
   </AppBar>
 }
