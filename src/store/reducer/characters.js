@@ -22,10 +22,11 @@ import save from './../dispatch/localStorageSave'
 const defaultState = []
 
 /**
- * 
+ * Update the characters state
  * @param {obj} state the array of character objects
  * @param {str} type a String to identify how we want to update the state
  * @param {obj} payload the data we use to update the state
+ * @returns {obj} The new state of characters
  */
 const charactersReducer = (state=defaultState, { type, payload }) => {
   let saveToStorage = true
