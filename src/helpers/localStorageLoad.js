@@ -21,4 +21,4 @@ const localStorageLoad = (key) => {
 }
 
 
-default export localStorageLoad
+export default localStorageLoad

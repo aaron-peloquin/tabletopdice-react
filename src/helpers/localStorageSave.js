@@ -13,4 +13,4 @@ const localStorageSave = (key,obj) => {
   }
 }
 
-default export localStorageSave
+export default localStorageSave
