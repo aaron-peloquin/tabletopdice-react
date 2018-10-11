@@ -19,7 +19,9 @@ import save from './../../helpers/localStorageSave'
  *      @param {int} val the current value
  */
 
-const defaultState = []
+const defaultState = [
+  {name:"Your first character"}
+]
 
 /**
  * Update the characters state
