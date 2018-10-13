@@ -1,18 +1,18 @@
-import React from 'react';
+import React from 'react'
 
-import { connect } from 'react-redux';
+import { connect } from 'react-redux'
 import drawerClose from './../store/dispatch/drawerClose'
 import drawerOpen from './../store/dispatch/drawerOpen'
 
-import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
+import SwipeableDrawer from '@material-ui/core/SwipeableDrawer'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemIcon from '@material-ui/core/ListItemIcon'
+import ListItemText from '@material-ui/core/ListItemText'
 import Typography from '@material-ui/core/Typography'
 
-import AddCircleIcon from '@material-ui/icons/AddCircle';
-import FaceIcon from '@material-ui/icons/Face';
+import AddCircleIcon from '@material-ui/icons/AddCircle'
+import FaceIcon from '@material-ui/icons/Face'
 
 /**
  * Returns components for the left side nav

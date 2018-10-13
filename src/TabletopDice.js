@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import Head from './element/HtmlHead'
 import Section from './element/HtmlSection'
 import Drawer from './element/HtmlDrawer'
