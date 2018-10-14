@@ -12,7 +12,7 @@ const reducers = combineReducers({
 })
 
 /** Enable chrome extension to view redux data */
-const reduxDevTools = window.devToolsExtension && window.devToolsExtension()
+const reduxDevTools = (typeof window != 'undefined' ? window.devToolsExtension && window.devToolsExtension() : false)
 
 /** Create our store with no default data */
 const store = createStore(reducers, {}, reduxDevTools)

@@ -1,10 +1,9 @@
-// See: https://tylermcginnis.com/react-router-server-rendering/
-
 var path = require('path')
 var webpack = require('webpack')
 var nodeExternals = require('webpack-node-externals')
 
 var browserConfig = {
+  mode: 'development',
   entry: './src/index-browser.js',
   output: {
     path: path.resolve(__dirname, 'public'),
@@ -24,6 +23,7 @@ var browserConfig = {
 }
 
 var serverConfig = {
+  mode: 'development',
   entry: './src/index-server.js',
   target: 'node',
   externals: [nodeExternals()],
@@ -44,4 +44,7 @@ var serverConfig = {
   ]
 }
 
-module.exports = [browserConfig, serverConfig]
+module.exports = [
+  // browserConfig,
+  serverConfig
+]
