@@ -20,6 +20,7 @@ if(typeof window != 'undefined') {
 }
 else {
   store = createStore(reducers)
+
 }
 
 export default store
