@@ -11,10 +11,15 @@ const reducers = combineReducers({
   "drawer": drawer,
 })
 
-/** Enable chrome extension to view redux data */
-const reduxDevTools = (typeof window != 'undefined' ? window.devToolsExtension && window.devToolsExtension() : false)
+let store
 
-/** Create our store with no default data */
-const store = createStore(reducers, {}, reduxDevTools)
+if(typeof window != 'undefined') {
+  /** We are in a browser render, enable chrome extension to view redux data */
+  const reduxDevTools = window.devToolsExtension && window.devToolsExtension()
+  store = createStore(reducers, {}, reduxDevTools)
+}
+else {
+  store = createStore(reducers)
+}
 
 export default store

@@ -9,7 +9,7 @@ import { Provider } from 'react-redux'
 // import * as serviceWorker from './serviceWorker'
 
 const server = express()
-
+const port = 3000
 server.use(cors)
 
 server.use(express.static('public'))
@@ -36,6 +36,9 @@ server.get("*", (req, res, next) => {
   res.send(dom)
 })
 
-server.listen(3000, () => {
-  console.log(markup)
+server.listen(port, () => {
+  console.log(`
+  Server is running on:
+  http://localhost:${port}
+  `)
 })
