@@ -19,6 +19,7 @@ import FaceIcon from '@material-ui/icons/Face'
  */
 const HtmlDrawer = (props) => {
   const { open, characters } = props
+  let i = 0
   return <SwipeableDrawer
     anchor="left"
     open={open}
@@ -33,13 +34,14 @@ const HtmlDrawer = (props) => {
         </ListItemIcon>
         <ListItemText inset primary="New Character" />
       </ListItem>
-      {characters.map(c=>
-        <ListItem button>
+      {characters.map(c=>{
+        i++
+        return <ListItem button key={i}>
           <ListItemIcon>
             <FaceIcon />
           </ListItemIcon>
           <ListItemText inset primary={c.name} />
-        </ListItem>)}
+        </ListItem>})}
     </List>
   </SwipeableDrawer>
 
